@@ -26,6 +26,19 @@ generateWithDocker() {
         -o /local/server
 }
 
+compileServerJarWithDocker() {
+    docker run -it --rm \
+      --name my-maven-project \
+      -v "$(pwd)/server":/usr/src/mymaven \
+      -w /usr/src/mymaven \
+      maven:3.6-jdk-11 \
+      mvn clean install
+}
+
+compile() {
+  compileServerJarWithDocker
+}
+
 generate() {
     generateLocally || generateWithDocker
 }
