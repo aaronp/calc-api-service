@@ -1,1 +1,7 @@
 server
+.bsp
+.scala-build
+.idea
+.vscode
+.DS_Store
+.metals

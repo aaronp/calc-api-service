@@ -6,5 +6,7 @@ compile: generate
 	. ./build.sh && compile
 build: compile
 	docker build . -t calcserver:latest
+ide: compile
+	. ./build.sh && ide
 clean:
 	rm -rf ./server
