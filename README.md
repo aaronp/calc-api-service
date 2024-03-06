@@ -13,5 +13,3 @@ We provide a [Dockerfile](./Dockerfile) just in case you want a zero-install bui
 
 As per the docs in [Server.scala](./Server.scala), you can just run `scala-cli Server.scala` and navigate to `localhost:8080`:
 
-![Swagger](img.png)
-
