@@ -7,10 +7,10 @@ import demo.calc.model.*
 
 def calc(calculateRequest: CalculateRequest): BigDecimal =
   calculateRequest match {
-    case CalculateRequest(lhs, CalculateRequest.OperatorEnum.add, rhs) => lhs + rhs
+    case CalculateRequest(lhs, CalculateRequest.OperatorEnum.add, rhs)      => lhs + rhs
     case CalculateRequest(lhs, CalculateRequest.OperatorEnum.subtract, rhs) => lhs - rhs
     case CalculateRequest(lhs, CalculateRequest.OperatorEnum.multiply, rhs) => lhs * rhs
-    case CalculateRequest(lhs, CalculateRequest.OperatorEnum.divide, rhs) => lhs / rhs
+    case CalculateRequest(lhs, CalculateRequest.OperatorEnum.divide, rhs)   => lhs / rhs
   }
 
 val myDefaultService = new DefaultService:
