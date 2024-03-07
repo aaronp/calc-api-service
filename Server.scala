@@ -2,7 +2,9 @@
 //> using lib "demo.rest::calc:0.0.1-SNAPSHOT"
 
 /**
- * This project was bootstrapped by copying
+ * This project is a service implementation of the [calc-api](https://github.com/aaronp/calc-api)
+ *
+ * It was bootstrapped by copying
  * [the generated example](https://github.com/aaronp/calc-api/tree/main/server-generated/v1/example)
  * directory of the generated server code and then just implementing the business logic.
  *
